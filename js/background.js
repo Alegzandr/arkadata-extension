@@ -36,7 +36,7 @@ $(function () {
     });
   }
 
-  setInterval(checkLive, 120000);
+  setInterval(checkLive, 60000);
   checkLive();
 
   // When clicking on notification
