@@ -1,23 +1,26 @@
 {
-   "author": "Alegzandr",
-   "background": {
-      "scripts": [ "js/background.js" ]
-   },
-   "browser_action": {
-      "default_icon": "img/icon_off.png",
-      "default_popup": "popup.html",
-      "default_title": "ARKADATA - Offline"
-   },
-   "description": "Don't miss ARKADATA anymore !",
-   "icons": {
-      "256": "img/logo256.png",
-      "128": "img/logo128.png",
-      "64": "img/logo64.png",
-      "32": "img/logo32.png"
-   },
-   "manifest_version": 2,
-   "name": "ARKADATA Extension",
-   "permissions": [ "https://api.twitch.tv/", "notifications", "management", "tabs", "background" ],
-   "update_url": "https://clients2.google.com/service/update2/crx",
-   "version": "1.0"
+  "author": "Alegzandr",
+  "background": {
+    "scripts": [
+      "js/sockjs.min.js",
+      "js/background.js"
+    ]
+  },
+  "browser_action": {
+    "default_icon": "img/icon_off.png",
+    "default_popup": "popup.html",
+    "default_title": "ARKADATA - Offline"
+  },
+  "description": "Don't miss ARKADATA anymore !",
+  "manifest_version": 2,
+  "name": "ARKADATA Extension",
+  "permissions": [
+    "https://api.twitch.tv/",
+    "notifications",
+    "management",
+    "tabs",
+    "background"
+  ],
+  "update_url": "https://clients2.google.com/service/update2/crx",
+  "version": "1.0"
 }

@@ -1,0 +1,74 @@
+/* Fonts */
+@font-face {
+  font-family: Pier;
+  src: url(../fonts/pier-regular.otf);
+}
+
+/* Body */
+body {
+  font-family: Pier;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+/* Main */
+main {
+  font-size: 1.4em;
+  width: 400px;
+  height: 160px;
+  background-image: url("../img/bg.jpg");
+  background-size: cover;
+  position: relative;
+  border: 1px inset #000;
+}
+
+main svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+main h3, main small {
+  margin-left: 10px;
+  margin-top: 8px;
+  display: none;
+}
+
+main small {
+  position: relative;
+  top: -20px;
+}
+
+.offline, .online {
+  font-weight: bold;
+}
+
+.offline {
+  color: #8c8c8c;
+}
+
+.online {
+  color: #2fd291;
+}
+
+/* Footer */
+footer {
+  width: 401px;
+  height: 41px;
+  position: absolute;
+  top: 120px;
+  left: -400px;
+  text-align: right;
+}
+
+footer p {
+  font-size: 1em;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+a, a:active, a:hover {
+  text-decoration: none;
+  color: #fff;
+}
