@@ -10,12 +10,11 @@
    },
    "description": "Don't miss ARKADATA anymore !",
    "icons": {
-      "128": "img/logo128.png",
       "256": "img/logo256.png",
+      "128": "img/logo128.png",
       "64": "img/logo64.png",
       "32": "img/logo32.png"
    },
-   "key": "",
    "manifest_version": 2,
    "name": "ARKADATA Extension",
    "permissions": [ "https://api.twitch.tv/", "notifications", "management", "tabs", "background" ],
