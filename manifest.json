@@ -13,9 +13,9 @@
   },
   "description": "Don't miss ARKADATA anymore !",
   "icons": {
-    "16": "img/logo16.jpg",
-    "48": "img/logo48.jpg",
-    "128": "img/logo128.jpg"
+    "16": "img/logo16.png",
+    "48": "img/logo48.png",
+    "128": "img/logo128.png"
   },
   "key" : "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnAgj98cFkgOPJJ8vxPc/OIlfEpdSx/Eux4tqZEOzzcbb4g1H+0Auht6F3czdXkj/J9I36kydN4p/ANzuiOtzThum57CD5YSmxS7nr+KOD9QyQf07NlpHidBz0sdrR+dIMGDKgGRcVRKJTzdwBCS6dGZlr1Z24bRbbEoRZQO2/fVD0uGy6f1zo6eDJa/W9gevKN6OaJJwX/Uz4POsd7HN0TlxoW34sGVTs+wS9PrbK15vNYbyzQSutOLEqELv+d+oYm2w/pctae0maBBX1qT1fZFlw2ao6cj3uaTXqsYfMwNovrcAjaW1xkMzP6RvVYslSjDo1ZptncImpQo/Sz2QMQIDAQAB",
   "manifest_version": 2,
@@ -26,5 +26,5 @@
     "background"
   ],
   "update_url": "https://clients2.google.com/service/update2/crx",
-  "version": "1.2"
+  "version": "1.3"
 }
