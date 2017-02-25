@@ -1,6 +1,7 @@
 // Gulp script to generate dist
 
 const gulp = require('gulp');
+const del = require('del');
 const jsonminify = require('gulp-jsonminify');
 const htmlmin = require('gulp-htmlmin');
 const cleanCSS = require('gulp-clean-css');
@@ -8,8 +9,13 @@ const uglify = require('gulp-uglify');
 const imagemin = require('gulp-imagemin');
 const zip = require('gulp-zip');
 
+// Clear dist folder
+gulp.task('clear', function () {
+  return del('dist/**/*');
+});
+
 // Minify JSON file
-gulp.task('jsonminify', function () {
+gulp.task('jsonminify', ['clear'], function () {
   return gulp.src('manifest.json')
     .pipe(jsonminify())
     .pipe(gulp.dest('dist'));

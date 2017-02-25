@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Alegzandr/arkadata-extension#readme",
   "devDependencies": {
+    "del": "^2.2.2",
     "gulp": "^3.9.1",
     "gulp-clean-css": "^3.0.3",
     "gulp-htmlmin": "^3.0.0",

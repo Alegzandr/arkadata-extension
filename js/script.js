@@ -8,11 +8,12 @@ $(function () {
   var apiChannels = 'https://api.twitch.tv/kraken/channels/' + channel + clientId;
 
   function getUptime(createdAt) {
-    return moment(createdAt).fromNow();
+    return moment(createdAt).fromNow(true);
   }
 
   // Load title
   $.get(apiChannels, function (data) {
+
     $('main').html('<h3>' + data.status + '</h3>');
     $('footer').animate({ left: '0' }, 'slow', 'swing');
     $('main > h3').fadeIn('slow');
