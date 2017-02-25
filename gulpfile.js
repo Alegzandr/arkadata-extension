@@ -2,7 +2,6 @@
 
 const gulp = require('gulp');
 const del = require('del');
-const jsonminify = require('gulp-jsonminify');
 const htmlmin = require('gulp-htmlmin');
 const cleanCSS = require('gulp-clean-css');
 const uglify = require('gulp-uglify');
@@ -14,17 +13,13 @@ gulp.task('clear', function () {
   return del('dist/**/*');
 });
 
-// Minify JSON file
-gulp.task('jsonminify', ['clear'], function () {
-  return gulp.src('manifest.json')
-    .pipe(jsonminify())
-    .pipe(gulp.dest('dist'));
-});
-
 // Minify HTML file
-gulp.task('htmlmin', ['jsonminify'], function () {
+gulp.task('htmlmin', ['clear'], function () {
   return gulp.src('popup.html')
-    .pipe(htmlmin())
+    .pipe(htmlmin({
+      collapseWhitespace: true,
+      removeComments: true
+    }))
     .pipe(gulp.dest('dist'));
 });
 
@@ -51,7 +46,7 @@ gulp.task('imagemin', ['uglify'], function () {
 
 // Copy other files to dist
 gulp.task('copy', ['imagemin'], function () {
-  return gulp.src(['fonts/**/*', 'css/*.min.css', 'js/*.min.js'], { base: '.' })
+  return gulp.src(['manifest.json', 'fonts/**/*', 'css/*.min.css', 'js/*.min.js'], { base: '.' })
     .pipe(gulp.dest('dist'));
 });
 
